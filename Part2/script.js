@@ -37,7 +37,6 @@ console.log(!(6>100));
 
 // SwitchCase
 let color="gree";
-
 switch(color){
     case "red":
         console.log("stop");
@@ -51,3 +50,16 @@ switch(color){
     default:
         console.log("Broken Light");               
 }
+
+           // CHECK ON CONSOLE SIDE ALSOO
+// ALert
+// alert("This is used for pop message on window");
+
+// Prompt
+prompt("enter a msg");
+
+//Error
+console.error("generated error message")
+
+//Warning
+console.warn("generated warning message")
