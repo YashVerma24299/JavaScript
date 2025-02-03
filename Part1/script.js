@@ -35,3 +35,62 @@ const num=24;
 var n=24; 
 var n=30;
 n=25;
+
+// Post and Pre
+let p=10,q=20;
+console.log(p++);
+console.log(p);
+
+console.log(++q);
+console.log(q);
+
+// Naming Convention
+let fullName; //camelCase  //Generally prefer this
+let full_name; //snake_case
+let FullName; //PascalCase
+
+// Boolean Data Type
+let adult=true;
+let agee=false;
+let check='true';
+console.log(adult);
+console.log(typeof adult);
+console.log(typeof check);
+
+// Data Type Conversion
+let val=12345;
+console.log(typeof val);
+val=true;
+console.log(typeof val);
+val="Yash";
+console.log(typeof val);
+
+// Above data type conversion can't be implement on TypeScript
+// Complex version of javaScipt
+
+                // String
+console.log("Concept 1");
+let str="a b c d"
+console.log(str[0]);
+console.log(str[1]);
+console.log(str[2]);
+
+console.log("Concept 2");
+let strr="a1 bggg c 123d"
+console.log(strr[0]);
+console.log(strr[1]);
+console.log(strr[3]);
+console.log(strr[4]);
+console.log(strr[5]);
+
+console.log("Concept 3");
+let strrr='123';
+console.log(strrr[0]);
+console.log(strrr[2]);
+
+console.log("Concept 4");
+//outer and inner quote not same;
+let str2="this is my'book'";
+// let str2='this is my "book"';
+console.log(str2);
+
