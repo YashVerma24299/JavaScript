@@ -94,3 +94,21 @@ let str2="this is my'book'";
 // let str2='this is my "book"';
 console.log(str2);
 
+console.log("Concept 5");
+//when we search out of range
+console.log(str2[100]);
+
+console.log("Concept 6");
+//length
+console.log("yash".length);
+console.log("yash"[2]);
+
+// Undefined
+let take;
+console.log(take);
+console.log(typeof take);
+
+// null ->Intentional absense of any value (jaan booj kr null dena)
+let  take2=null;
+console.log(take2);
+console.log(typeof take2);
