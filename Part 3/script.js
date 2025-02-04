@@ -35,5 +35,15 @@ console.log(newww);
 let newwww=str4.slice(7,str4.length);
 console.log(newwww);
 // slice(-ve value) traverse from back with 1-indexed
-let new2=str4.slice(-4);
+let new2=str4.slice(-4).toUpperCase();
 console.log(new2);
+
+// Replacing
+let str5=" Ilove Coding love love";
+console.log(str5.replace("love", "doo"));
+console.log(str5.replaceAll("love", "doo"));
+
+// Repeat
+console.log(str5.repeat(3));
+console.log(str5.repeat(3).toUpperCase());
+
