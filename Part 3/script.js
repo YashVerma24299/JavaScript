@@ -96,7 +96,6 @@ console.log(colors);
 colors.splice(1,0,"YASH");//ye 1 position pr jaakr 0 value ko delete krke YASH add kregaa   (value added b/w the voilet and grey)
 console.log(colors);
 
-
 // sort (every value convert in string then sort apply)
 let str11=["yash", "mohit", "xmax"];
 let str111=['a', 'f', 'p', 'b'];
@@ -108,5 +107,10 @@ console.log(str11);
 console.log(str111);
 console.log(num);
 
+//Array Reference
 
-//
+// Nested Arrays or MultiDimensional
+let n=[[1,2], [3,4], [5,6], [7,8,9,3,4]];
+console.log(n);
+console.log(n[3]);
+console.log(n[3][2]);
