@@ -21,3 +21,20 @@ while(val<=5){
     console.log(val);
     val++;
 }
+
+
+// ACTIVITY USING PROMPT  (RUN THESE)
+
+// let word="Apple";
+// let guess_word=prompt("Enter a Word");
+
+// while(word!=guess_word && guess_word!="quit"){
+//     guess_word=prompt("Try Again!");
+// }
+// if(word==guess_word){
+//     console.log("Congratulaions!!")
+// }
+// else if(guess_word=="quit"){
+//     console.log("You Quit the Game!")
+// }
+
