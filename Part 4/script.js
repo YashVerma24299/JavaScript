@@ -38,3 +38,33 @@ while(val<=5){
 //     console.log("You Quit the Game!")
 // }
 
+
+                    // Loops with array
+console.log("Loops with array");
+let namee=["Yash1", "Yash2", "Yash3"]
+for(let i=0; i<namee.length; i++){
+    console.log(i, namee[i]);
+}
+
+                    // Loops with Nested array
+console.log("Loops with Nested array");
+let namee2=[["Yash1", "Yash2", "Yash3"], ["Ritik1", "Ritik2"], ["Tannu1"]];
+for(let i=0; i<namee2.length; i++){
+    console.log(`Outer Loop ${i+1}`);
+    for(let j=0; j<namee2[i].length; j++){
+        console.log(j+1, namee2[i][j]);
+    }
+}
+
+                    //For Of Loops
+console.log("For of Loops");
+let namee3=["Yash1", "Yash2", "Yash3"]
+for(let i of namee3){
+    console.log(i);
+}
+for(i of namee){
+    console.log(i);
+}
+for(i of "YASHVERMA"){
+    console.log(i);
+}
