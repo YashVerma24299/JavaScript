@@ -55,3 +55,26 @@ const classs2 = [
 ];
 console.log(classs2);
 console.log(classs2[1].age);
+
+
+
+// See thier magic in INSPECT
+console.log(Math); // See thier magic in INSPECT
+console.log(Math.PI);
+console.log(Math.E);
+console.log(Math.abs(-78));
+console.log(Math.max(234.34,987));
+console.log(Math.sqrt(9));
+console.log(Math.pow(2,8));
+console.log(Math.floor(8.9)); //nearest smallest value
+console.log(Math.ceil(8.9));
+console.log(Math.random());
+console.log(Math.random()); //range 0 to 1 (1 -> exclusive)
+
+
+//Generate random number
+let num=Math.floor(Math.random()*10); //range 0 to 9
+console.log(num);
+
+let num2=Math.floor(Math.random()*5)+21; //range 21 to 25
+console.log(num2);
