@@ -50,7 +50,7 @@ console.log(res(1,5,2));
 
 ////High Order Functions
 // Takes one or multiple fn as arguments
-function count(fn){
+function xyz(fn){
     for(let i=0; i<3; i++){
         fn();
     }
@@ -58,4 +58,77 @@ function count(fn){
 let print_name= function(){
     console.log("YASH");
 }
-count(print_name);
+xyz(print_name);
+
+
+//return a function
+function check(request){
+    if(request=="odd"){
+        // let oddd = function(){
+        //     console.log("ODD");
+        // }
+        // return oddd;
+        return function(){
+            console.log("ODD");
+        }
+    }
+    else{
+        return function(){
+            console.log("EVEN");
+        }
+    }
+}
+const result = check("odd");
+result();
+
+
+//OBJECTS --> key-value
+//METHODS --> ket-function
+let calcii = {
+    num:100,
+    add: function(a,b){
+        return a+b;
+    },
+    sub: function(a,b){
+        return a-b;
+    },
+    mul(a,b){
+        return a*b;
+    }
+    // mul: function(a,b){
+    //     return a*b;
+    // }
+}
+console.log(calcii.add(5,5)); //access value
+
+
+calcii.pow = function (a, b) {
+    return a**b;
+};
+calcii.div = function div(a, b) {
+    return a / b;
+};
+delete calcii.sub; //delete a Key
+console.log(calcii); //see output acche se specially (pow)
+
+
+calcii.add = function(a, b) {
+    return `Sum: ${a + b}`;
+};
+console.log(calcii.add(5,5)); //update
+
+
+//QUESTION:4
+function countVowels(str) {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+      let ch = str.charAt(i).toLowerCase(); // Convert to lowercase for easy comparison
+  
+      if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+        count++;
+      }
+    }
+  
+    return count;
+  }
+console.log(countVowels("Hello"));
