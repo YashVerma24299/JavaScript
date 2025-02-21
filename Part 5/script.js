@@ -78,3 +78,26 @@ console.log(num);
 
 let num2=Math.floor(Math.random()*5)+21; //range 21 to 25
 console.log(num2);
+
+
+
+                                            //GUESSING A RANDOM NUMBER GAME
+// let max=prompt("Enter a max number");
+// let random=Math.floor(Math.random()*max)+1;
+// let guess=prompt("guess the number");
+
+// while(true){
+//     if(guess=="quit" || guess=="Quit"){
+//         console.log("User quit the game");
+//         break;
+//     }
+//     else if(guess==random){
+//         console.log("You are Right! and random number was: ",guess);
+//         break;
+//     }else if(guess>random){
+//         guess=prompt("hint: your guess was to large. Please try again");
+//     }
+//     else{
+//         guess=prompt("hint: your guess was to small. Please try again")
+//     }
+// }
