@@ -1,4 +1,4 @@
-                                //
+                                        //this
 
 let info ={
     name: "Yash",
@@ -17,3 +17,23 @@ let info ={
     }
 }
 console.log(info.avg());
+
+
+                                       //try-catch
+//console.log(a);      ->give Error
+console.log("start");
+try{
+    console.log(a);
+}catch{
+    console.log("Variable does not define");
+}
+console.log("end");
+
+console.log("start");
+try{
+    console.log(a);
+}catch(yash){
+    console.log("Variable does not define");
+    console.log(yash);
+}
+console.log("end");
