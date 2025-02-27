@@ -35,3 +35,13 @@ print();
 //const fn_name = (arg1,...) => (//only return value);
 
 const mul = (a,b) => (a*b);
+
+// Question: Average of array
+let ans= (arr) =>{
+    let sum=0;
+    for(let i of arr){
+        sum+=i;
+    }
+    console.log(sum/arr.length);
+}
+ans([1,2,3,4,5]);
