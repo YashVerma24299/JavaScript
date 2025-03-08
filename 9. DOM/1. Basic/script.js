@@ -42,5 +42,9 @@ console.dir(document.querySelectorAll("div a"));
 
 
 
-
-//Different Properties & Methods
+//Manipulating Attribute
+//Manipulating style
+let links=document.querySelectorAll(".box a");
+for (link of links) {
+    link.style.color="purple";
+}
