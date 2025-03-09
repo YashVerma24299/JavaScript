@@ -96,3 +96,9 @@ temp.classList.contains("A"); //output-true
 // class hetho remove krdega
 // class nhi hetho add krdega
 temp.classList.toggle("yash");
+
+
+
+//Navigation
+//Adding element
+//Remove element
