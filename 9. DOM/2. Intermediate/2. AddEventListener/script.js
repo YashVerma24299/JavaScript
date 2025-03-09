@@ -13,3 +13,22 @@ function print() {
     console.log("Second");;
 }
 // get many Event -> https://developer.mozilla.org/en-US/docs/Web/API/Event
+
+
+
+//in inspect
+let container = document.querySelector(".container");
+container.addEventListener("mouseenter", function () {
+    console.log("Mouse inside the container");
+});
+
+
+
+//this
+let btn = document.querySelector(".yash");
+btn.addEventListener("click", function () {
+    console.log(this);
+    console.log(this);
+    console.log(this.innerText);
+    this.style.backgroundColor="pink";
+});
