@@ -1,4 +1,4 @@
-//PROMISES
+                    //PROMISES
 //promises generally used to stop the callback hell(nesting condition)
 
 // Single data check
@@ -77,4 +77,21 @@ function savetoDataBase (data){
 
 }
 let check=savetoDataBase("Yash Verma"); // in inspect
-console.log(check); // in inspect
+
+
+
+
+                    // then() & catch()
+//Promises has 2 funda
+// 1. resolve/fulfilled ->then
+// 2. reject ->catch
+
+check
+    .then( ()=>{
+        console.log("Promise was resolved/ Success");
+        console.log(check);
+    })
+    .catch( ()=>{
+        console.log("Promise was reject/ Failure");
+        console.log(check);
+    })
