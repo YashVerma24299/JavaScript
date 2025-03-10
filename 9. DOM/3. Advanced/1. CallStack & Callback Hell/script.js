@@ -16,6 +16,8 @@ three();
 
 
 
+
+                    //IMPORTANT NOTE
 //Js single threaded hai -> means one line execute at a time
 //but
 // we can execute many line at a time also
@@ -41,6 +43,8 @@ console.log(b);
 
 
 
+
+                    //BASIC CONCEPT
 let h1= document.querySelector("h1");
 // setTimeout(function () {
 //     h1.style.color="red";
@@ -62,9 +66,11 @@ changeColor("green",3000);
 
 
 
-//PROMISES
+
+                    // CALLBACK HELL
 //promises generally used to stop the callback hell(nesting condition)
 
+//single data validity check
 // function savetoDb (data){
 //     let internetSpeed= Math.floor(Math.random()*10)+1;
 //     if(internetSpeed>5){
@@ -74,6 +80,7 @@ changeColor("green",3000);
 //     }
 // }
 // savetoDb("Yash");
+
 
 //multiple data validity check
 function savetoDb (data, success, failure){
@@ -109,9 +116,3 @@ savetoDb("Yash",
         console.log("Failed 1");
     }
 )
-
-//Promises -> represent the success or failure of an asynchronous operation and its resulting value
-//promises is an object
-//promises has t funda
-// 1. resolve=success
-// 2. reject=failure
