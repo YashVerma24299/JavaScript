@@ -1,4 +1,4 @@
-//Data type of (a,aa,aaa) is Number
+//Data type of (a,aa,aaa) is "Number"
 a=10;
 aa=10.1;
 aaa=-10;
@@ -8,12 +8,12 @@ console.log(typeof aaa);
 
 //There is always limited memory range
 b=0.99999999999;
-console.log(b);
+console.log(b);             //same
 c=0.99999999999999999;
-console.log(c);
+console.log(c);             // 1
 
 // exponential
-console.log(2**3);
+console.log(2**3);         // 2^3 = 8
 
 //NAN (Not A Number)
 value=0/0;
@@ -23,13 +23,10 @@ console.log(typeof value);
             //Keywords
 // let=can't redeclare & can update
 let age=24; 
-// let age=30;
 age=25;
 
 // const=can't redeclare & can't update
 const num=24; 
-// const num=30;
-// num=25;
 
 // var=can redeclare & can update
 var n=24; 
@@ -51,9 +48,9 @@ let FullName; //PascalCase
 
 // Boolean Data Type
 let adult=true;
-let agee=false;
 let check='true';
 console.log(adult);
+console.log(check);
 console.log(typeof adult);
 console.log(typeof check);
 
@@ -90,13 +87,14 @@ console.log(strrr[2]);
 
 console.log("Concept 4");
 //outer and inner quote not same;
-let str2="this is my'book'";
-// let str2='this is my "book"';
+let str2="this is my 'book'";
+let strr2='this is my "book"';
 console.log(str2);
+console.log(strr2);
 
 console.log("Concept 5");
 //when we search out of range
-console.log(str2[100]);
+console.log(str2[100]);             //undefined
 
 console.log("Concept 6");
 //length
