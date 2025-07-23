@@ -1,6 +1,6 @@
 let info ={
     name: "Yash",
-    gemder: "Male",
+    gender: "Male",
     eng: 90,
     math: 90,
     hin: 90,
