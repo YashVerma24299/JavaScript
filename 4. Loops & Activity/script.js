@@ -68,3 +68,15 @@ for(i of namee){
 for(i of "YASHVERMA"){
     console.log(i);
 }
+
+
+// Good Logic
+let arr = ['a', 'b', 'c', 'd', 'e', 'f'];
+
+for (let val of arr) {
+  console.log(val); // a, b...
+}
+
+for (let index in arr) {
+  console.log(index); // 0, 1....
+}
