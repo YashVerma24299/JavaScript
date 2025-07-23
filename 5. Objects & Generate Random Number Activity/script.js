@@ -1,4 +1,4 @@
-                    //Object 
+//Object 
 let student = {
     firstName: "Yash",
     lastName: "Verma",
@@ -18,6 +18,17 @@ console.log(student.color[2]);
 
 console.log(student[3]);
 
+// delete a key
+delete student.cgpa;
+console.log(student);
+// check if exist a key
+console.log("age" in student); // true
+console.log(student.hasOwnProperty("age")); //true
+// Loop
+for (let key in student) {
+    console.log(`${key}: ${student[key]}`);
+}
+
 
 // Nested Object
 console.log("Nested Object");
@@ -35,13 +46,16 @@ const classs = {
         roll_no: 55
     }
 };
+delete classs.yash1;
+console.log(classs);
+console.log(classs.yash1);
 console.log(classs.yash2);
+console.log(classs['yash2']['roll_no']);
 console.log(classs.yash2.roll_no);
 
 
-//Array of objects
-//Objects does not have index
-//Arrays have index
+
+//Array of objects    ->Objects does not have index    ->Arrays have index
 console.log("Array of objects");
 const classs2 = [
     {
@@ -56,6 +70,15 @@ const classs2 = [
 console.log(classs2);
 console.log(classs2[1].age);
 
+
+// Object of Array
+const data = {
+    names: ["Yash", "Ritik"],
+    ages: [21, 22]
+};
+console.log(data.names)
+console.log(data.names[0]) 
+console.log(data.ages[1]) 
 
 
 // See thier magic in INSPECT
