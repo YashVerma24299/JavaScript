@@ -7,7 +7,7 @@ console.log(str.trim());
 
 // upper and lower case
 console.log("LOWERCASE & UPPERCASE:");
-let str1="Ysh VermAA";
+let str1="Yash VermAA";
 console.log(str1.toUpperCase());
 console.log(str1.toLowerCase());
 
@@ -42,10 +42,35 @@ console.log(new2);
 let str5=" Ilove Coding love love";
 console.log(str5.replace("love", "doo"));
 console.log(str5.replaceAll("love", "doo"));
+console.log(str5.replace("ov", "doo"));
+console.log(str5.replaceAll("o", "doo"));
 
 // Repeat
 console.log(str5.repeat(3));
 console.log(str5.repeat(3).toUpperCase());
+
+// Includes
+console.log("Hello world".includes(" ")); 
+console.log("Hello world".includes("world"));
+console.log("Hello world".includes("World"))
+
+// Capitalize the first letter
+let sttr = "hello";
+let cap = sttr.charAt(0).toUpperCase() + sttr.slice(1);
+console.log(cap);
+// let sttr = "hello";
+// let cap = sttr.charAt(1).toUpperCase() + sttr.slice(2);
+// console.log(cap);
+
+// More Function
+console.log("JavaScript".startsWith("J")); 
+console.log("JavaScript".endsWith("ipt"));
+
+let reversed = "hello".split("");
+console.log(reversed);
+
+let reversed1 = "hello".split("").reverse().join("");
+console.log(reversed1);
 
 
                         // Array(mutable) ----------------JavaScipt Part3 (Arrays are Mutable)
@@ -54,7 +79,7 @@ let v=["firstName", "yash", "lastName", "verma", "89", 9.80, 888, true];
 console.log(v);
 console.log(typeof v);
 console.log(v[0]);
-console.log(v[8]);
+console.log(v[8]); //undefined
 
 // NEW LOGIC  (only on string not in number)
 console.log(v[0][5]);
@@ -114,3 +139,23 @@ let n=[[1,2], [3,4], [5,6], [7,8,9,3,4]];
 console.log(n);
 console.log(n[3]);
 console.log(n[3][2]);
+
+//Includes
+let arr = ["apple", "banana", "cherry"];
+console.log(arr.includes("banana"));
+console.log(arr.includes("an"));
+
+// Join
+console.log(["a", "b", "c"].join("-"));
+
+// Flat
+console.log([[1, 2], [3, 4]].flat()); 
+
+let deep = [1, [2, [3, [4]]]];
+console.log(deep.flat(1)); 
+console.log(deep.flat(Infinity));
+
+// Reverse
+let arrr = [1, 2, 3];
+arrr.reverse();
+console.log(arrr);
