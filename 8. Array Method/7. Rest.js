@@ -22,6 +22,7 @@ console.log(f,s,other);
 
 let [ff, ss, ...otherr]=names;
 console.log(ff,ss,...otherr);
+console.log(otherr);
 
 let student = {
     firstName: "Yash",
