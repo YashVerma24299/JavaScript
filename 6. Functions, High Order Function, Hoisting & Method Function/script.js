@@ -25,12 +25,28 @@ let str=["hi","_","buddy","!!"];
 console.log(concat(str));
 
 
-//HOISTING(GOOD TOPIC: SEE EXAMPLE ONLY) 
+
+//HOISTING(GOOD TOPIC: SEE EXAMPLE ONLY)
+// Function declarations and var declarations are hoisted to the top of their scope.
+// var is hoisted with value undefined.
+// let and const are hoisted but not initialized → accessing them before declaration gives ReferenceError.
 hoisted();
 function hoisted() {
   console.log(y); // undefined (due to hoisting of var declaration)
   var y = 42;
   console.log(y);
+}
+hoistedd(2);
+function hoistedd(m) {
+  console.log(y); // undefined (due to hoisting of var declaration)
+  var y = 42;
+  console.log(y*m);
+}
+yash(20);
+function yash(a) {
+  console.log(y); // undefined (due to hoisting of var declaration)
+  var y = 42;
+  console.log(y+a);
 }
 // hoisted1();                       // Reference Error
 // function hoisted1() {
@@ -38,15 +54,26 @@ function hoisted() {
 //   const y = 42; || let y =42;
 //   console.log(y);
 // }
+// 🔥 HOISTING Summary:
+// - function declarations are fully hoisted
+// - var: hoisted + initialized as undefined
+// - let/const: hoisted but not initialized → ReferenceError if accessed before declaration
+
 
 
 //QUESTION:3       //known function expression
-let res = function(a,b,c){
+let res = function(a,b,c=4){
     return a*b*c;
 }
 console.log(res); //print the function code in inspect
-console.log(res(3,5));
+console.log(res(1,5));
 console.log(res(1,5,2));
+// let res = function(a,b,c){
+//     return a*b*c;
+// }
+// console.log(res(3,5));
+
+
 
 ////High Order Functions
 // Takes one or multiple fn as arguments
@@ -59,6 +86,7 @@ let print_name= function(){
     console.log("YASH");
 }
 xyz(print_name);
+
 
 
 //return a function
@@ -83,7 +111,7 @@ result();
 
 
 //OBJECTS --> key-value
-//METHODS --> ket-function
+//METHODS --> key-function
 let calcii = {
     num:100,
     add: function(a,b){
@@ -122,13 +150,14 @@ console.log(calcii.add(5,5)); //update
 function countVowels(str) {
     let count = 0;
     for (let i = 0; i < str.length; i++) {
-      let ch = str.charAt(i).toLowerCase(); // Convert to lowercase for easy comparison
-  
-      if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+        let ch = str.charAt(i).toLowerCase(); // Convert to lowercase for easy comparison
+        // let ch=str[i].toLowerCase();
+
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
         count++;
-      }
+        }
     }
-  
+
     return count;
-  }
+}
 console.log(countVowels("Hello"));
