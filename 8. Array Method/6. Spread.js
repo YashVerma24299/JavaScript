@@ -1,4 +1,5 @@
 //Expands the value(individual value create)
+// ... = Spread Operator
 
 let arr = [1,2,3,4,5];
 console.log(...arr); //or console.log(1,2,3,4,5);     
@@ -51,3 +52,25 @@ console.log(modify);
 //value -> jo bhi value haiiii
 let obj= {..."Visual"};
 console.log(obj);
+
+let obj1= [..."Visual"];
+console.log(obj1);
+
+
+// Good 
+function add(a, b, c) {
+  return a + b + c;
+}
+let nums = [10, 20, 30];
+console.log(add(...nums));
+// function add(a, b, c=90) {
+//   return a + b + c;
+// }
+// let nums = [10, 0];
+// console.log(add(...nums));
+
+
+//  Using spread to remove duplicates
+let arr1 = [1, 2, 2, 3];
+let unique = [...new Set(arr1)];
+console.log(unique); // [1, 2, 3]
