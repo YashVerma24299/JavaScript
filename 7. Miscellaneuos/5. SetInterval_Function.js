@@ -6,7 +6,7 @@
 console.log("Hi there");
 setInterval(()=>{
     console.log("Yash Verma");
-},2000);
+},2000);  // Executes the callback every 2000ms = 2 seconds
 console.log("My name is ");
 
 
