@@ -13,39 +13,39 @@
 // savetoDb("Yash");
 
 //multiple data validity check
-function savetoDb (data, success, failure){
-    let internetSpeed= Math.floor(Math.random()*10)+1;
-    if(internetSpeed>5){
-        success();
-    }else{
-        failure();
-    }
-}
-//These a concept of callback hell
-savetoDb("Yash",
-    () =>{
-        console.log("Success 1");
-        savetoDb("Verma",
-            () =>{
-                console.log("Success 2");
-                savetoDb("Yash Verma",
-                    () =>{
-                        console.log("Success 3");
-                    },
-                    () =>{
-                        console.log("Failue 3");
-                    }
-                )
-            },
-            () =>{
-                console.log("Failue 2");
-            }
-        )
-    },
-    () =>{
-        console.log("Failed 1");
-    }
-)
+// function savetoDb (data, success, failure){
+//     let internetSpeed= Math.floor(Math.random()*10)+1;
+//     if(internetSpeed>5){
+//         success();
+//     }else{
+//         failure();
+//     }
+// }
+// //These a concept of callback hell
+// savetoDb("Yash",
+//     () =>{
+//         console.log("Success 1");
+//         savetoDb("Verma",
+//             () =>{
+//                 console.log("Success 2");
+//                 savetoDb("Yash Verma",
+//                     () =>{
+//                         console.log("Success 3");
+//                     },
+//                     () =>{
+//                         console.log("Failue 3");
+//                     }
+//                 )
+//             },
+//             () =>{
+//                 console.log("Failue 2");
+//             }
+//         )
+//     },
+//     () =>{
+//         console.log("Failed 1");
+//     }
+// )
 
 
 

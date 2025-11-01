@@ -130,3 +130,8 @@ p.insertAdjacentElement("afterend",btn4);
 //Both work same
 // body.removeChild(btn4); 
 // btn4.remove();
+
+// let newPara = document.createElement("p"); // creates: <p></p>
+// newPara.innerText = "Hello Yash!";         // now: <p>Hello Yash!</p>
+
+// document.body.appendChild(newPara);        // adds it to the body

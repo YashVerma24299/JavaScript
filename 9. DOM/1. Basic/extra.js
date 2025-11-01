@@ -14,8 +14,8 @@ img.id //access id
 img.src="creation_1.png" // update source image
 
 let des=document.getElementById("description"); //select
-a.innerText ="rtyhbhjkl" // update main text
-a.tagName //access tagname
+des.innerText ="rtyhbhjkl" // update main text
+des.tagName //access tagname
 
 
  
@@ -36,6 +36,11 @@ let tag_li=document.getElementsByTagName("li");
 //QuerySelectors
 console.dir(document.querySelector("h1"));
 console.dir(document.querySelectorAll("h1"));
+
+
+                    // Logic
+// getElementById("mainImg")	Only ID name (no #)	
+// querySelector("#mainImg")	CSS selector (needs # for ID)
 
 
  

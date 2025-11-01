@@ -2,6 +2,7 @@
 
 //In inspect check "sources" (near console)
 //SEE BREAKPOINT(apply breakpoint on "three()") AND CALLSTACK
+// Call Stack Example
 function one() {
     return 1;
 }
@@ -13,6 +14,7 @@ function three() {
     console.log(sum);
 }
 three();
+//  This is the synchronous flow.
 
 
 
@@ -26,11 +28,11 @@ three();
 // setTimeout(function,2000);
 //ye teeno ek saath hi execute hongi...
 //INITIALLY, Js normal run hoga aur aapne kaam ko callstack m daalta jaaiga and perform krta jaaiga
-//jese hi setTimeout aaiga isko ye browser m daal dega 
-//jese hi setTimeout aaiga isko ye browser m daal dega 
-//jese hi setTimeout aaiga isko ye browser m daal dega 
+//jese hi setTimeout aaiga isko ye "browser" m daal dega (callback queue MAI DAAL DEGA) NOT IN CALLSTACK..DONO ALG HAIIIII
+//jese hi setTimeout aaiga isko ye "browser" m daal dega 
+//jese hi setTimeout aaiga isko ye "browser" m daal dega 
 //aur Js normal jese run krrha tha vse hi krta rhega
-//aur jese hi browser ka time hojaaiga execute ka -> tho vo us function ya kaam ko callstack m daal dega
+//aur jese hi "browser" ka time hojaaiga execute ka -> tho vo us function ya kaam ko callback queue SE LAAAKAR callstack m daal dega
 //Js usko perform krdega
 //OVERALL, JS KBHI NHI RUKTAA VO CONTINUE AAPNA KAAM KRTA HAI 
 
@@ -67,7 +69,10 @@ changeColor("green",3000);
 
 
 
-                    // CALLBACK HELL
+                    // CALLBACK HELL(nesting condition)
+// Callback Hell is when callbacks are nested within callbacks, forming a pyramid structure that:
+    // Is hard to read
+    // Hard to debug
 //promises generally used to stop the callback hell(nesting condition)
 
 //single data validity check
@@ -116,3 +121,5 @@ savetoDb("Yash",
         console.log("Failed 1");
     }
 )
+// RIGHT NOW, IT'S TOO MESSY
+// READ NEXT TOPIC
